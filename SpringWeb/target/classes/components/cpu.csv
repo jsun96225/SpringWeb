@@ -1,0 +1,20 @@
+Name                   ,Price,Stock
+Intel Core i7-8809G    ,150  ,25
+Intel Core i7-8709G    ,155  ,20
+Intel Core i7-8700K    ,200  ,15
+Intel Core i7-8650U    ,75   ,25
+Intel Core i9-7980XE   ,120  ,20
+Intel Core i9-7940X    ,150  ,15
+Intel Core i9-7900X    ,155  ,25
+Intel Core i7-6950X    ,145  ,40
+Intel Core ii7-8706G   ,120  ,20
+Intel Core ii7-8705G   ,50   ,25
+Intel Core ii7-8700    ,85   ,25
+Intel Core ii7-8550U   ,95   ,40
+Xeon Processor E7-8894 ,165  ,20
+Xeon Processor E7-8893 ,85   ,30
+Xeon Processor E7-8880 ,105  ,40
+Xeon Processor E7-8860 ,115  ,30
+Xeon Processor E7-4809 ,95   ,45
+Atom Processor C3308   ,45   ,25
+Atom Processor C3338   ,55   ,45

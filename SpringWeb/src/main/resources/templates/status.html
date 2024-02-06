@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}">
+</head>
+<body>
+
+<div style="margin: 50px;" th:if="${orderDetail == null}">
+    <h5>Can not find order detail on this page, please make sure the order id is correct !</h5>
+</div>
+
+<div style="margin: 40px" th:if="${orderDetail != null}">
+    <h4>Hello: <span th:text="${orderDetail.username}"></span></h4>
+    <p>Your Order Id: <span th:text="${orderDetail.orderId}"></span></p>
+    <p>Address: <span th:text="${orderDetail.address}"></span></p>
+    <h6> Order Result: <span th:text="${orderDetail.orderResult}"></span></h6>
+
+    <h5>Order Details: </h5>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Component Type</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Count</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="item: ${orderDetail.orderItemList}">
+            <td th:text="${item.type}"></td>
+            <td th:text="${item.name}"></td>
+            <td th:text="${item.price}"></td>
+            <td th:text="${item.count}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <h5>Total Price: <span th:text="${orderDetail.totalPrice}"></span></h5>
+</div>
+
+</body>
+</html>
